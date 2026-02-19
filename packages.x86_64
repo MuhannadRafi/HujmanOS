@@ -1,0 +1,133 @@
+# ==========================================
+# 1. Arch Linux Core & Boot 
+# ==========================================
+base
+linux
+linux-firmware
+mkinitcpio
+mkinitcpio-archiso
+pacman
+sudo
+systemd
+systemd-sysvcompat
+arch-install-scripts
+grub
+syslinux
+memtest86+
+memtest86+-efi
+edk2-shell
+efibootmgr
+dosfstools
+mtools
+nano
+vim
+git
+plymouth
+wget
+qemu-desktop
+
+# ==========================================
+# 2. HujmanOS Custom Packages (Modern Hyprland)
+# ==========================================
+hyprland
+wayland
+xorg-xwayland
+qt5-wayland
+qt6-wayland
+xdg-desktop-portal-hyprland
+waybar
+wofi
+mako
+hyprpaper
+polkit-kde-agent
+kitty
+zsh
+starship
+fastfetch
+thunar
+thunar-archive-plugin
+file-roller
+firefox
+mousepad
+btop
+networkmanager
+network-manager-applet
+bluez
+bluez-utils
+blueman
+pipewire
+pipewire-alsa
+pipewire-pulse
+pipewire-jack
+wireplumber
+chromium
+
+# ==========================================
+# 3. Graphical Installer & Windows Compatibility
+# ==========================================
+calamares
+qt5-svg
+polkit-qt5
+kpmcore
+yaml-cpp
+# --- Windows Emulation ---
+wine
+wine-mono
+wine-gecko
+bottles        
+winetricks     
+
+# ==========================================
+# 4. Office & Productivity
+# ==========================================
+libreoffice-fresh    
+evince               
+vlc                  
+gimp                 
+
+# ==========================================
+# 5. Cybersecurity & Penetration Testing
+# ==========================================
+# --- Browsers & Anonymity ---
+tor
+openvpn
+
+# --- Networking & Sniffing ---
+gnu-netcat
+wireshark-qt
+tcpdump
+
+# --- Information Gathering & Recon ---
+nmap
+recon-ng
+sublist3r
+maltego
+gobuster
+feroxbuster
+
+# --- Web Vulnerability Scanning ---
+nikto
+burpsuite
+skipfish
+wfuzz
+
+# --- Exploitation Frameworks ---
+metasploit
+exploitdb
+
+# --- Password Cracking & Wordlists ---
+john
+hashcat
+hydra
+wordlists
+
+# --- Wireless Attacks ---
+wifite
+
+# --- Fuzzing Tools ---
+sfuzz
+
+# --- Reverse Engineering & Debugging ---
+ghidra
+ollydbg
+autopsy

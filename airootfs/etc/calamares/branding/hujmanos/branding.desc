@@ -1,0 +1,30 @@
+---
+componentName:  hujmanos
+welcomeStyleCalamares:   false
+welcomeExpandingLogo:   true
+windowExpanding:    normal
+windowSize: 800px,520px
+windowPlacement: center
+
+strings:
+    productName:         HujmanOS
+    shortProductName:    Hujman
+    productVersion:      2026.02
+    shortProductVersion: 2026.02
+    versionedName:       HujmanOS 2026.02 "Wayland Edition"
+    shortVersionedName:  HujmanOS 2026.02
+    bootloaderEntryName: HujmanOS
+    productUrl:          https://github.com/muhannadrafi/hujmanos
+    supportUrl:          https://github.com/muhannadrafi/hujmanos/issues
+    releaseNotesUrl:     https://github.com/muhannadrafi/hujmanos
+
+images:
+    productLogo:         "logo.png"
+    productIcon:         "logo.png"
+    productWelcome:      "welcome.png"
+
+style:
+   sidebarBackground:    "#C15F3C"
+   sidebarText:          "#FFFFFF"
+   sidebarTextSelect:    "#222222"
+   sidebarTextHighlight: "#EEEEEE"

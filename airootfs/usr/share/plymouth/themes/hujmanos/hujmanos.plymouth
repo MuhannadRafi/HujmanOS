@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=HujmanOS Logo
+Description=A spiritual loading screen for HujmanOS
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/hujmanos
+ScriptFile=/usr/share/plymouth/themes/hujmanos/hujmanos.script
