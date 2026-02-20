@@ -37,6 +37,7 @@ HujmanOS comes out of the box with:
 HujmanOS is built using `archiso` within a Docker container to ensure environment consistency.
 
 ```bash
+
 # Clone the repository
 git clone [https://github.com/MuhannadRafi/HujmanOS.git](https://github.com/MuhannadRafi/HujmanOS.git)
 cd HujmanOS
@@ -45,3 +46,5 @@ cd HujmanOS
 docker run --privileged -it -v $(pwd):/HujmanOS archlinux:base-devel /bin/bash
 # Inside container:
 mkarchiso -v -w /tmp/archiso-tmp -o /HujmanOS/out /HujmanOS/
+
+```
