@@ -48,7 +48,7 @@ pacman -Sy archiso --noconfirm
 
 # Run the build
 mkarchiso -v -w /tmp/archiso-tmp -o /HujmanOS/out /HujmanOS/
-
+```
 
 
 ## 🤝 Contributing
@@ -61,4 +61,7 @@ Contributions are what make the open-source community an amazing place to learn,
 4. **Push** to the Branch (`git push origin feature/AmazingFeature`).
 5. Open a **Pull Request**.
 
-Developed by **Muhannad (Munx64)**. Let's build the future of security together.
+Developed by **Muhannad (MuhannadRafi)**. Let's build the future of security together.
+
+## 📜 License
+**This project is licensed under the MIT License.**
