@@ -2,9 +2,11 @@
 
 **HujmanOS** is a high-performance, Arch-based Linux distribution tailored for **Cybersecurity Professionals** and **Penetration Testers**. It features a pre-configured **Hyprland** environment designed for efficiency and speed.
 
-🌐 **Official Website:** [https://HujmanOS.com](https://HujmanOS.com)
-
----
+<p align="center">
+  <a href="https://HujmanOS.com">
+    <img src="https://img.shields.io/badge/Official%20Website-HujmanOS.com-blue?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Official Website">
+  </a>
+</p>
 
 ## 🚀 Core Philosophy
 Designed in Jeddah, Saudi Arabia, HujmanOS is the intersection of Global Political Economy and Advanced Cybersecurity. It provides a seamless experience for auditing digital infrastructures.
