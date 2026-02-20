@@ -1,50 +1,50 @@
-# 🛡️ HujmanOS (V1.0) 
+# <img src="airootfs/etc/calamares/branding/hujmanos/logo.png" width="50" align="center"> HujmanOS (V1.0)
 
-**HujmanOS** is a professional, Arch-based Linux distribution custom-built for Cybersecurity Specialists, Penetration Testers, and Linux Enthusiasts. Developed by **Muhannad (Munx64)**, it focuses on modern workflows, security analysis, and web vulnerability research.
+**HujmanOS** is a high-performance, Arch-based Linux distribution tailored for **Cybersecurity Professionals** and **Penetration Testers**. It features a pre-configured **Hyprland** environment designed for efficiency and speed.
+
+🌐 **Official Website:** [https://HujmanOS.com](https://HujmanOS.com)
 
 ---
 
 ## 🚀 Core Philosophy
-Designed in Jeddah, Saudi Arabia, HujmanOS bridges the gap between high-performance daily driving and hardcore security auditing. It features a highly customized **Hyprland (Wayland)** environment for maximum productivity.
+Designed in Jeddah, Saudi Arabia, HujmanOS is the intersection of Global Political Economy and Advanced Cybersecurity. It provides a seamless experience for auditing digital infrastructures.
 
-### 🛠️ Specialized Focus:
-- **Web Security:** Pre-configured tools for **XSS** and **SQL Injection** analysis.
-- **Pentesting Suite:** Includes Metasploit, Burp Suite, Nmap, and Ghidra.
-- **Modern UI:** Powered by Wayland, Waybar, and Kitty terminal.
-- **Compatibility:** Built-in support for Windows applications via Wine and Winetricks.
-
----
-
-## 📸 Screenshots
-> *[Add your screenshot here: `assets/desktop_preview.png`]*
-> *Experience the fluid motion of Hyprland with HujmanOS custom dotfiles.*
+### 🛠️ Key Features
+- **UI/UX:** Custom **Hyprland** (Wayland) compositor with professional dotfiles.
+- **Security Focus:** Advanced tools for **XSS** and **SQL Injection** vulnerability research.
+- **Versatility:** Integrated **Wine** and **Winetricks** for Windows tool compatibility.
+- **Ready for Daily Use:** Pre-installed with **LibreOffice**, **GIMP**, and **VLC**.
 
 ---
 
 ## 🧰 The Pentester's Toolbox
-HujmanOS comes out of the box with:
-* **Information Gathering:** Recon-ng, Sublist3r, Maltego.
-* **Vulnerability Analysis:** Nikto, Skipfish, Nuclei.
-* **Exploitation:** Metasploit Framework, ExploitDB.
-* **Forensics & Reversing:** Autopsy, Ghidra, OllyDbg.
-* **Password Cracking:** John the Ripper, Hashcat.
+Armed with official Arch and **BlackArch** repositories:
+
+| Category | Tools |
+| :--- | :--- |
+| **Web Analysis** | **Burp Suite**, SQLMap, Nikto, Wfuzz |
+| **Reconnaissance** | Nmap, Recon-Ng, Sublist3r, Gobuster |
+| **Exploitation** | Metasploit-Framework, Exploit-DB |
+| **Reverse Eng.** | **Ghidra**, OllyDbg, Autopsy |
+| **Cryptography** | Hashcat, John the Ripper, Hydra |
 
 ---
 
-## 🏗️ Build & Installation
-
-### Build from Source (macOS/Linux)
-HujmanOS is built using `archiso` within a Docker container to ensure environment consistency.
+## 💿 Build from Source
+Build HujmanOS using Docker on macOS/Linux:
 
 ```bash
-
 # Clone the repository
 git clone [https://github.com/MuhannadRafi/HujmanOS.git](https://github.com/MuhannadRafi/HujmanOS.git)
 cd HujmanOS
 
-# Build the ISO (Requires Docker)
+# Build using Docker
 docker run --privileged -it -v $(pwd):/HujmanOS archlinux:base-devel /bin/bash
-# Inside container:
-mkarchiso -v -w /tmp/archiso-tmp -o /HujmanOS/out /HujmanOS/
 
-```
+# Inside the container:
+# Update keys and install archiso
+pacman-key --init && pacman-key --populate archlinux
+pacman -Sy archiso --noconfirm
+
+# Run the build
+mkarchiso -v -w /tmp/archiso-tmp -o /HujmanOS/out /HujmanOS/
