@@ -30,25 +30,46 @@ Armed with official Arch and **BlackArch** repositories:
 
 ---
 
-## 💿 Build from Source
-Build HujmanOS using Docker on macOS/Linux:
+### 🛠️ Quick Start: Build HujmanOS
+
+Follow these steps to compile the ISO directly on your machine using **Docker**:
+
+**1. Clone the environment**
 
 ```bash
-# Clone the repository
-git clone [https://github.com/MuhannadRafi/HujmanOS.git](https://github.com/MuhannadRafi/HujmanOS.git)
+git clone https://github.com/MuhannadRafi/HujmanOS.git
 cd HujmanOS
 
-# Build using Docker
+```
+
+**2. Launch the Build Container**
+
+```bash
 docker run --privileged -it -v $(pwd):/HujmanOS archlinux:base-devel /bin/bash
 
-# Inside the container:
-# Update keys and install archiso
+```
+
+**3. Prepare & Compile (Inside Docker)**
+
+```bash
+# Initialize keys and install Archiso tool
 pacman-key --init && pacman-key --populate archlinux
 pacman -Sy archiso --noconfirm
 
-# Run the build
+# Start the "Cooking" process
 mkarchiso -v -w /tmp/archiso-tmp -o /HujmanOS/out /HujmanOS/
+
 ```
+
+---
+
+### 💡 Why this works for HujmanOS?
+
+* **Isolation:** Using Docker ensures that your Mac stays clean while building a Linux kernel.
+* **Transparency:** Every step is visible, which is crucial for a security-focused OS dedicated to **XSS** and **SQL Injection** research.
+* **Output:** Your final ISO will appear instantly in your `~/Desktop/HujmanOS/out` folder.
+
+---
 
 
 ## 🤝 Contributing
